@@ -1,7 +1,10 @@
 import React from 'react';
 import styles from './Tags.module.css';
+import { TodoContext } from '../TodoContext';
 
-const Tags = ({ tags, setTags, selectedTag, setSelectedTag}) => {
+const Tags = () => {
+  const {lists, tags, setTags, setFilteredLists} = React.useContext(TodoContext)
+  const [selectedTag, setSelectedTag] = React.useState('All');
   const inputRef = React.useRef();
 
 
@@ -19,6 +22,10 @@ const Tags = ({ tags, setTags, selectedTag, setSelectedTag}) => {
     }
   }
 
+
+  React.useEffect(() => {
+    setFilteredLists(lists.filter((listFilter) => listFilter.tags.some((listSome) => listSome === selectedTag)))
+  }, [lists, setFilteredLists, selectedTag])
 
   return (
     <div className={styles.tags} >

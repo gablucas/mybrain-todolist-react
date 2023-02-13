@@ -1,9 +1,9 @@
 import React from 'react'
-import { GlobalContext } from '../TodoList';
+import { TodoContext } from '../TodoContext';
 import styles from './ListOptions.module.css';
 
 const DeleteList = ({ data }) => {
-  const { lists, setLists } = React.useContext(GlobalContext);
+  const { lists, setLists } = React.useContext(TodoContext);
 
   // Faz um filter para remover a lista
   // Faz um map para reorganizar os ids em ordem númerica, assim evitando conflito

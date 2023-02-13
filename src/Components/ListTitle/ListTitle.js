@@ -1,11 +1,11 @@
 import React from 'react';
-import useDebounce from './Hooks/useDebounce';
-import useTextarea from './Hooks/useTextarea';
+import useDebounce from '../../Hooks/useDebounce';
+import useTextarea from '../../Hooks/useTextarea';
 import styles from './ListTitle.module.css';
-import { GlobalContext } from './TodoList';
+import { TodoContext } from '../TodoContext';
 
 const ListTitle = ({ data }) => {
-  const {lists, setLists} = React.useContext(GlobalContext);
+  const {lists, setLists} = React.useContext(TodoContext);
   const [displayValue, setDisplayValue] = React.useState(data.title);
   const textareaRef = React.useRef(null);
   const { resizeTextarea } = useTextarea()

@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './List.module.css';
-import stylesListOptions from './ListOptions/ListOptions.module.css';
-import ListTitle from './ListTitle';
-import ChangeBackgroundColor from './ListOptions/ChangeBackgroundColor';
-import DuplicateList from './ListOptions/DuplicateList';
-import DeleteList from './ListOptions/DeleteList';
-import NewTask from './NewTask';
-import Task from './Task';
-import MarkList from './ListOptions/PinList';
-import TagList from './ListOptions/TagList';
+import stylesListOptions from '../ListOptions/ListOptions.module.css';
+import ListTitle from '../ListTitle/ListTitle';
+import ChangeBackgroundColor from '../ListOptions/ChangeBackgroundColor';
+import DuplicateList from '../ListOptions/DuplicateList';
+import DeleteList from '../ListOptions/DeleteList';
+import NewTask from '../NewTask/NewTask';
+import Task from '../Task/Task';
+import MarkList from '../ListOptions/PinList';
+import TagList from '../ListOptions/TagList';
 
 
 const List = ({ data }) => {
