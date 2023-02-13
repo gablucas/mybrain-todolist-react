@@ -1,10 +1,10 @@
 import React from 'react';
-import { GlobalContext } from '../TodoList';
+import { TodoContext } from '../TodoContext';
 import styles from './ListOptions.module.css';
 
 
 const PinList = ({ data }) => {
-  const {lists, setLists} = React.useContext(GlobalContext);
+  const {lists, setLists} = React.useContext(TodoContext);
 
   function handleMark() {
     setLists([{...data, pinned: true}, ...lists.filter((list) => list.id !== data.id)]);

@@ -1,14 +1,14 @@
 import React from 'react'
-import { GlobalContext } from './TodoList';
 import styles from './Task.module.css';
-import checkedImage from '../Assets/icons/checkbox_checked.svg';
-import uncheckedImage from '../Assets/icons/checkbox_unchecked.svg';
-import useDebounce from './Hooks/useDebounce';
-import useTextarea from './Hooks/useTextarea';
+import { TodoContext } from '../TodoContext';
+import checkedImage from '../../Assets/icons/checkbox_checked.svg';
+import uncheckedImage from '../../Assets/icons/checkbox_unchecked.svg';
+import useDebounce from '../../Hooks/useDebounce';
+import useTextarea from '../../Hooks/useTextarea';
 
 
 const Task = ({ task, data }) => {
-  const { lists, setLists } = React.useContext(GlobalContext);
+  const { lists, setLists } = React.useContext(TodoContext);
   const [displayValue, setDisplayValue] = React.useState(task.value);
   const taskRef = React.useRef();
   const checkboxRef = React.useRef();

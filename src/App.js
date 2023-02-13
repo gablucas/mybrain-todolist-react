@@ -1,10 +1,15 @@
 import './App.css';
-import TodoList from './Components/TodoList';
+import Header from './Components/Header/Header';
+import { TodoContextProvider } from './Components/TodoContext';
+import TodoList from './Components/TodoList/TodoList';
 
 function App() {
   return (
     <div className="App">
-      <TodoList />
+      <TodoContextProvider>
+        <Header />
+        <TodoList />
+      </TodoContextProvider>
     </div>
   );
 }

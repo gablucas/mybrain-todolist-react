@@ -1,9 +1,9 @@
 import React from 'react';
-import { GlobalContext } from '../TodoList';
+import { TodoContext } from '../TodoContext';
 import styles from './ListOptions.module.css';
 
 const TagList = ({ data }) => {
-  const { tags, lists, setLists } = React.useContext(GlobalContext);
+  const { tags, lists, setLists } = React.useContext(TodoContext);
   const tagContainerRef = React.useRef();
 
   function handleCheckboxTag(e, tag) {
@@ -26,7 +26,6 @@ const TagList = ({ data }) => {
   }
 
   function handleShowTagContainer() {
-    console.log(tagContainerRef.current)
     tagContainerRef.current.classList.toggle('show');
   }
 

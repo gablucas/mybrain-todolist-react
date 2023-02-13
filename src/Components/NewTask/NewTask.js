@@ -1,10 +1,10 @@
 import React, { useRef } from 'react';
-import useRandomID from './Hooks/useRandomID';
-import styles from './List.module.css';
-import { GlobalContext } from './TodoList';
+import styles from '../List/List.module.css';
+import { TodoContext } from '../TodoContext';
+import useRandomID from '../../Hooks/useRandomID';
 
 const NewTask = ({ data }) => {
-  const { lists, setLists } = React.useContext(GlobalContext);
+  const { lists, setLists } = React.useContext(TodoContext);
   const taskID = useRandomID('task-')
   const newTaskRef = useRef();
 

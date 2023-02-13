@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './ListOptions.module.css';
-import { GlobalContext } from '../TodoList';
-import ColorCircle from '../helper/ColorCircle';
+import { TodoContext } from '../TodoContext';
+import ColorCircle from '../Helper/ColorCircle';
 
 const ChangeBackgroundColor = ({ data, listElement }) => {
-  const {lists, setLists} = React.useContext(GlobalContext);
+  const {lists, setLists} = React.useContext(TodoContext);
   const colorElement = React.useRef();
   const colorsOptions = React.useRef();
 

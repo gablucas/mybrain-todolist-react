@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './ListOptions.module.css';
-import { GlobalContext } from '../TodoList';
-import useRandomID from '../Hooks/useRandomID';
+import { TodoContext } from '../TodoContext';
+import useRandomID from '../../Hooks/useRandomID';
 
 const DuplicateList = ({ data }) => {
-  const {lists, setLists} = React.useContext(GlobalContext);
+  const {lists, setLists} = React.useContext(TodoContext);
   const listID = useRandomID('list-')
   const taskID = useRandomID('task-')
 
