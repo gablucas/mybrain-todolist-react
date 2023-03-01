@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mybrain-todolist-react/static/css/main.ace93771.css",
+    "main.css": "/mybrain-todolist-react/static/css/main.10a52cee.css",
     "main.js": "/mybrain-todolist-react/static/js/main.2b748e90.js",
     "static/media/logo.svg": "/mybrain-todolist-react/static/media/logo.edf6091f3d5048903279ea76a7d6e213.svg",
     "static/media/pallete.svg": "/mybrain-todolist-react/static/media/pallete.c0c198053f4961f6622b.svg",
@@ -15,11 +15,11 @@
     "static/media/delete.svg": "/mybrain-todolist-react/static/media/delete.0a0e6aedf43d055104d9.svg",
     "static/media/pin.svg": "/mybrain-todolist-react/static/media/pin.36c86c89db2dcd26fed0.svg",
     "static/media/deleteTask.svg": "/mybrain-todolist-react/static/media/deleteTask.39b1dbf7316ba95092cd.svg",
-    "main.ace93771.css.map": "/mybrain-todolist-react/static/css/main.ace93771.css.map",
+    "main.10a52cee.css.map": "/mybrain-todolist-react/static/css/main.10a52cee.css.map",
     "main.2b748e90.js.map": "/mybrain-todolist-react/static/js/main.2b748e90.js.map"
   },
   "entrypoints": [
-    "static/css/main.ace93771.css",
+    "static/css/main.10a52cee.css",
     "static/js/main.2b748e90.js"
   ]
 }
