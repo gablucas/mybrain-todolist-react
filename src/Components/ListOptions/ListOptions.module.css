@@ -131,7 +131,7 @@
 
   position: absolute; /* Relacionado ao posição da .listOptions no List.module.css */
   top: 20px;
-  left: 0;
+  left: 0px;
 }
 
 .colorOptions:global(.show) {

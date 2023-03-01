@@ -32,7 +32,7 @@ const ChangeBackgroundColor = ({ data, listElement }) => {
 
   return (
     <div>
-      <div className={`${styles.color} ${styles.option}`} onClick={() => handleShowColors()} ref={colorElement} ></div>
+      <div className={`${styles.color} ${styles.option}`} onClick={handleShowColors} ref={colorElement} ></div>
 
       <ul onClick={setListColor} className={styles.colorOptions} ref={colorsOptions} >
         <li><ColorCircle color='FFFFFF' /></li>

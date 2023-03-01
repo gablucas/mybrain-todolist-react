@@ -1,12 +1,12 @@
 .list {
+  min-width: 320px;
   border: 1px solid #bebebe;
   border-radius: 5px;
   cursor: pointer;
-  min-width: 320px;
 }
 
 .list:hover {
-  box-shadow: 0 0 1px #000000;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .3);
 }
 
 .tasks {
