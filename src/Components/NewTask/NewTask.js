@@ -22,6 +22,8 @@ const NewTask = ({ data }) => {
         return listMap;
       }))
 
+      
+
       e.target.value = "";
     }
   }
