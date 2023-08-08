@@ -9,13 +9,14 @@
 
 .createTag {
   display: flex;
+  justify-items: start;
   border: 2px solid #595959;
   border-radius: 7px;
   overflow: hidden;
 }
 
 .tagName {
-  width: 100px;
+  width: 120px;
   border: none;
   outline: none;
 }
